@@ -1,6 +1,6 @@
 import javax.print.DocFlavor.STRING;
 
-public class MinhaClasse{
+public class MinhaClasse1{
  
     public static void main(String[]args){
      String primeiroNome = "Caroline";
