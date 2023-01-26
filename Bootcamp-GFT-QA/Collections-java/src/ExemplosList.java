@@ -92,7 +92,8 @@ public class ExemplosList {
 
         System.out.println("Confira se a lista está vazia:" + notas.isEmpty());
 
-        //Exercicios Collections.
+        //Exercicios Collections
+        //teste
 
 
     }
