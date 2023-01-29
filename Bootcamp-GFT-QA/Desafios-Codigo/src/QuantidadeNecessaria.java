@@ -9,8 +9,14 @@ public class QuantidadeNecessaria {
 
         // TODO: Retorne o número de pizzas necessárias para atender o pedido.
 
-        for (int i =0; i <T ++){
-            int N =
+        for (int i =0; i <T; i++){
+            int N = scanner.nextInt();
+            System.out.println("Informe o número de fatias necessárias");
+            int X = scanner.nextInt();
+
+            int numPizzas = (N * X + 3) / 4;
+
+            System.out.println(numPizzas);
         }
 
 
