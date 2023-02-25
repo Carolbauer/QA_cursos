@@ -1,0 +1,31 @@
+#app {
+text-align: center;
+color: blueviolet;
+background-color: white;
+margin: auto;
+width: 800px;
+}
+body {
+    background-color: black;
+    text-align: center;
+}
+
+p{
+    color:mediumpurple;
+    text-align: center;
+}
+
+img {
+   border-radius: 10px;
+   border: 8px solid blueviolet;
+   
+}
+
+.characteres {
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+}
+
+.item img{
+width: 200px;
+}
