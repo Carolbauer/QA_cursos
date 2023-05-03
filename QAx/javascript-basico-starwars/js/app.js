@@ -26,6 +26,14 @@ var n2 = 5
 var total = n1 + n2
 console.log(total)
 
+//Operadores de comparação
+
+var v1 = 5
+var v2 = 5
+//var resultado = v1 === v2
+var resultado = v1 != v2
+
+console.log(resultado)
 
 
 
