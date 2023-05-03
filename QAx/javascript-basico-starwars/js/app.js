@@ -4,6 +4,7 @@ var userName = 'Caroline Bauer'
 
 document.getElementById('user-name').innerHTML = userName
 
+//variaveis//
 
 //var nome = 'Mestre Yoda'
 //var idade = 100
@@ -16,6 +17,14 @@ document.getElementById('user-name').innerHTML = userName
 //String nome = "Mestre Yoda"
 //int idade  = 100
 //boll jedi = true
+
+
+//Operadores matemáticos//
+var n1 = 5
+var n2 = 5
+
+var total = n1 + n2
+console.log(total)
 
 
 
