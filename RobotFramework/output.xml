@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20230508 16:24:19.873" rpa="false" schemaversion="3">
+<suite id="s1" name="Primeiro-Teste" source="/Users/carol/Documents/GitHub/Cursos_QA/QA_cursos/RobotFramework/cursoRobot/primeiro-teste.robot">
+<test id="s1-t1" name="Abrir o navegador e acessar o site do organo" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:3000</arg>
+<arg>browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 16:24:19.952" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000'.</msg>
+<msg timestamp="20230508 16:24:19.955" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230508 16:24:19.956" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20230508 16:24:19.952" endtime="20230508 16:24:19.959"/>
+</kw>
+<status status="FAIL" starttime="20230508 16:24:19.951" endtime="20230508 16:24:19.960">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20230508 16:24:19.875" endtime="20230508 16:24:19.961"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Primeiro-Teste">Primeiro-Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

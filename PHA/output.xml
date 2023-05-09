@@ -1,0 +1,1541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20230508 12:01:42.550" rpa="false" schemaversion="3">
+<suite id="s1" name="Aula3" source="/Users/carol/Documents/GitHub/Cursos_QA/QA_cursos/PHA/pha-robot/test/aula3.robot">
+<test id="s1-t1" name="LISTA - TEST DE PRINT NA TELA 01" line="122">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.601" endtime="20230508 12:01:42.603"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.600" endtime="20230508 12:01:42.604"/>
+</kw>
+<kw name="escreva na tela os 3 primeiros valores de uma lista">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.605" endtime="20230508 12:01:42.605"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[1]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.606" endtime="20230508 12:01:42.606"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[2]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.607" endtime="20230508 12:01:42.608"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.604" endtime="20230508 12:01:42.608"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.610" endtime="20230508 12:01:42.610"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.609" endtime="20230508 12:01:42.612"/>
+</kw>
+<tag>aula-3-list-1</tag>
+<status status="PASS" starttime="20230508 12:01:42.598" endtime="20230508 12:01:42.614"/>
+</test>
+<test id="s1-t2" name="DICT - TEST DE PRINT NA TELA 01" line="126">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.620" endtime="20230508 12:01:42.620"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.619" endtime="20230508 12:01:42.621"/>
+</kw>
+<kw name="escreva a profissao e carro do colega">
+<kw name="Log To Console" library="BuiltIn">
+<arg>carro: ${DICT_COLEGA}[carro]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.625" endtime="20230508 12:01:42.626"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>profissao: ${DICT_COLEGA}[profissao]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.626" endtime="20230508 12:01:42.627"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.621" endtime="20230508 12:01:42.627"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.629" endtime="20230508 12:01:42.629"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.628" endtime="20230508 12:01:42.630"/>
+</kw>
+<tag>aula-3-dict-1</tag>
+<status status="PASS" starttime="20230508 12:01:42.617" endtime="20230508 12:01:42.630"/>
+</test>
+<test id="s1-t3" name="REPETICAO - PRINTAR 10 PRIMEIROS NUMEROS NA TELA" line="130">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.633" endtime="20230508 12:01:42.636"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.632" endtime="20230508 12:01:42.638"/>
+</kw>
+<kw name="escreva os 10 primeiros valores de uma lista">
+<for flavor="IN RANGE">
+<var>${counter}</var>
+<value>0</value>
+<value>10</value>
+<iter>
+<var name="${counter}">0</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.644" endtime="20230508 12:01:42.645"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.643" endtime="20230508 12:01:42.645"/>
+</iter>
+<iter>
+<var name="${counter}">1</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.646" endtime="20230508 12:01:42.647"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.645" endtime="20230508 12:01:42.647"/>
+</iter>
+<iter>
+<var name="${counter}">2</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.648" endtime="20230508 12:01:42.649"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.647" endtime="20230508 12:01:42.649"/>
+</iter>
+<iter>
+<var name="${counter}">3</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.650" endtime="20230508 12:01:42.651"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.649" endtime="20230508 12:01:42.651"/>
+</iter>
+<iter>
+<var name="${counter}">4</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.652" endtime="20230508 12:01:42.653"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.651" endtime="20230508 12:01:42.653"/>
+</iter>
+<iter>
+<var name="${counter}">5</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.654" endtime="20230508 12:01:42.655"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.653" endtime="20230508 12:01:42.655"/>
+</iter>
+<iter>
+<var name="${counter}">6</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.656" endtime="20230508 12:01:42.657"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.656" endtime="20230508 12:01:42.657"/>
+</iter>
+<iter>
+<var name="${counter}">7</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.658" endtime="20230508 12:01:42.658"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.657" endtime="20230508 12:01:42.659"/>
+</iter>
+<iter>
+<var name="${counter}">8</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.659" endtime="20230508 12:01:42.660"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.659" endtime="20230508 12:01:42.660"/>
+</iter>
+<iter>
+<var name="${counter}">9</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTA_NUM}[${counter}]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.661" endtime="20230508 12:01:42.661"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.661" endtime="20230508 12:01:42.662"/>
+</iter>
+<status status="PASS" starttime="20230508 12:01:42.643" endtime="20230508 12:01:42.662"/>
+</for>
+<status status="PASS" starttime="20230508 12:01:42.642" endtime="20230508 12:01:42.662"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.663" endtime="20230508 12:01:42.664"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.663" endtime="20230508 12:01:42.664"/>
+</kw>
+<tag>aula-3-rep-1</tag>
+<status status="PASS" starttime="20230508 12:01:42.631" endtime="20230508 12:01:42.665"/>
+</test>
+<test id="s1-t4" name="REPETICAO - PRINTAR A LISTA NA TELA" line="134">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.668" endtime="20230508 12:01:42.669"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.668" endtime="20230508 12:01:42.670"/>
+</kw>
+<kw name="escreva todas as racas que anotamos">
+<for flavor="IN">
+<var>${element}</var>
+<value>@{RACA_DOG_TURMA}</value>
+<iter>
+<var name="${element}">SRD</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.672" endtime="20230508 12:01:42.673"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.672" endtime="20230508 12:01:42.673"/>
+</iter>
+<iter>
+<var name="${element}">BEAGLE</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.674" endtime="20230508 12:01:42.674"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.673" endtime="20230508 12:01:42.674"/>
+</iter>
+<iter>
+<var name="${element}">DASCHUND</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.675" endtime="20230508 12:01:42.676"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.675" endtime="20230508 12:01:42.676"/>
+</iter>
+<iter>
+<var name="${element}">PITBULL</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.676" endtime="20230508 12:01:42.677"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.676" endtime="20230508 12:01:42.677"/>
+</iter>
+<iter>
+<var name="${element}">SHITZU</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.678" endtime="20230508 12:01:42.678"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.678" endtime="20230508 12:01:42.679"/>
+</iter>
+<iter>
+<var name="${element}">GOLDEN</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.679" endtime="20230508 12:01:42.680"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.679" endtime="20230508 12:01:42.680"/>
+</iter>
+<iter>
+<var name="${element}">PEQUINES</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.681" endtime="20230508 12:01:42.681"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.680" endtime="20230508 12:01:42.682"/>
+</iter>
+<iter>
+<var name="${element}">PASTOR</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.682" endtime="20230508 12:01:42.683"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.682" endtime="20230508 12:01:42.683"/>
+</iter>
+<iter>
+<var name="${element}">PUG</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.684" endtime="20230508 12:01:42.684"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.683" endtime="20230508 12:01:42.685"/>
+</iter>
+<iter>
+<var name="${element}">POODLE</var>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${element}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.685" endtime="20230508 12:01:42.686"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.685" endtime="20230508 12:01:42.686"/>
+</iter>
+<status status="PASS" starttime="20230508 12:01:42.671" endtime="20230508 12:01:42.687"/>
+</for>
+<status status="PASS" starttime="20230508 12:01:42.671" endtime="20230508 12:01:42.687"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.689" endtime="20230508 12:01:42.689"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.688" endtime="20230508 12:01:42.690"/>
+</kw>
+<tag>aula-3-rep-2</tag>
+<status status="PASS" starttime="20230508 12:01:42.666" endtime="20230508 12:01:42.690"/>
+</test>
+<test id="s1-t5" name="BONUS - ACHAR O POODLE" line="138">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.693" endtime="20230508 12:01:42.693"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.692" endtime="20230508 12:01:42.694"/>
+</kw>
+<kw name="achar a posicao do poodle na minha lista">
+<kw name="Set Local Variable" library="BuiltIn">
+<arg>${counter}</arg>
+<arg>0</arg>
+<doc>Makes a variable available everywhere within the local scope.</doc>
+<msg timestamp="20230508 12:01:42.697" level="INFO">${counter} = 0</msg>
+<status status="PASS" starttime="20230508 12:01:42.695" endtime="20230508 12:01:42.700"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.701" level="INFO">${raca_temp} = SRD</msg>
+<status status="PASS" starttime="20230508 12:01:42.700" endtime="20230508 12:01:42.701"/>
+</kw>
+<while condition="${counter} &lt; 10">
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.703" endtime="20230508 12:01:42.703"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.704" endtime="20230508 12:01:42.704"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.703" endtime="20230508 12:01:42.704"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.705" endtime="20230508 12:01:42.710"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.711" level="INFO">${counter} = 1</msg>
+<status status="PASS" starttime="20230508 12:01:42.710" endtime="20230508 12:01:42.711"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.704" endtime="20230508 12:01:42.712"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.702" endtime="20230508 12:01:42.722"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.723" level="INFO">${raca_temp} = BEAGLE</msg>
+<status status="PASS" starttime="20230508 12:01:42.722" endtime="20230508 12:01:42.723"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.702" endtime="20230508 12:01:42.724"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.725" endtime="20230508 12:01:42.725"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.726" endtime="20230508 12:01:42.726"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.725" endtime="20230508 12:01:42.727"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.728" endtime="20230508 12:01:42.732"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.733" level="INFO">${counter} = 2</msg>
+<status status="PASS" starttime="20230508 12:01:42.733" endtime="20230508 12:01:42.734"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.727" endtime="20230508 12:01:42.734"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.724" endtime="20230508 12:01:42.734"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.735" level="INFO">${raca_temp} = DASCHUND</msg>
+<status status="PASS" starttime="20230508 12:01:42.734" endtime="20230508 12:01:42.735"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.724" endtime="20230508 12:01:42.735"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.737" endtime="20230508 12:01:42.737"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.737" endtime="20230508 12:01:42.737"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.736" endtime="20230508 12:01:42.737"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.738" endtime="20230508 12:01:42.741"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.742" level="INFO">${counter} = 3</msg>
+<status status="PASS" starttime="20230508 12:01:42.741" endtime="20230508 12:01:42.742"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.738" endtime="20230508 12:01:42.742"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.736" endtime="20230508 12:01:42.743"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.745" level="INFO">${raca_temp} = PITBULL</msg>
+<status status="PASS" starttime="20230508 12:01:42.744" endtime="20230508 12:01:42.746"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.736" endtime="20230508 12:01:42.746"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.747" endtime="20230508 12:01:42.748"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.748" endtime="20230508 12:01:42.748"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.747" endtime="20230508 12:01:42.749"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.749" endtime="20230508 12:01:42.750"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.751" level="INFO">${counter} = 4</msg>
+<status status="PASS" starttime="20230508 12:01:42.750" endtime="20230508 12:01:42.751"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.749" endtime="20230508 12:01:42.751"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.747" endtime="20230508 12:01:42.752"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.753" level="INFO">${raca_temp} = SHITZU</msg>
+<status status="PASS" starttime="20230508 12:01:42.752" endtime="20230508 12:01:42.753"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.746" endtime="20230508 12:01:42.753"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.754" endtime="20230508 12:01:42.754"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.755" endtime="20230508 12:01:42.755"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.754" endtime="20230508 12:01:42.755"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.756" endtime="20230508 12:01:42.756"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.757" level="INFO">${counter} = 5</msg>
+<status status="PASS" starttime="20230508 12:01:42.756" endtime="20230508 12:01:42.757"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.755" endtime="20230508 12:01:42.757"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.754" endtime="20230508 12:01:42.758"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.758" level="INFO">${raca_temp} = GOLDEN</msg>
+<status status="PASS" starttime="20230508 12:01:42.758" endtime="20230508 12:01:42.758"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.753" endtime="20230508 12:01:42.759"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.760" endtime="20230508 12:01:42.760"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.760" endtime="20230508 12:01:42.760"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.759" endtime="20230508 12:01:42.761"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.761" endtime="20230508 12:01:42.762"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.763" level="INFO">${counter} = 6</msg>
+<status status="PASS" starttime="20230508 12:01:42.762" endtime="20230508 12:01:42.763"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.761" endtime="20230508 12:01:42.763"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.759" endtime="20230508 12:01:42.763"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.764" level="INFO">${raca_temp} = PEQUINES</msg>
+<status status="PASS" starttime="20230508 12:01:42.764" endtime="20230508 12:01:42.764"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.759" endtime="20230508 12:01:42.765"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.766" endtime="20230508 12:01:42.766"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.766" endtime="20230508 12:01:42.767"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.766" endtime="20230508 12:01:42.767"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.767" endtime="20230508 12:01:42.768"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.769" level="INFO">${counter} = 7</msg>
+<status status="PASS" starttime="20230508 12:01:42.769" endtime="20230508 12:01:42.770"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.767" endtime="20230508 12:01:42.770"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.765" endtime="20230508 12:01:42.770"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.771" level="INFO">${raca_temp} = PASTOR</msg>
+<status status="PASS" starttime="20230508 12:01:42.770" endtime="20230508 12:01:42.771"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.765" endtime="20230508 12:01:42.771"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.772" endtime="20230508 12:01:42.772"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.773" endtime="20230508 12:01:42.773"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.772" endtime="20230508 12:01:42.773"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.774" endtime="20230508 12:01:42.774"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.775" level="INFO">${counter} = 8</msg>
+<status status="PASS" starttime="20230508 12:01:42.774" endtime="20230508 12:01:42.775"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.773" endtime="20230508 12:01:42.775"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.772" endtime="20230508 12:01:42.776"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.776" level="INFO">${raca_temp} = PUG</msg>
+<status status="PASS" starttime="20230508 12:01:42.776" endtime="20230508 12:01:42.777"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.772" endtime="20230508 12:01:42.777"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.778" endtime="20230508 12:01:42.778"/>
+</kw>
+<break>
+<status status="NOT RUN" starttime="20230508 12:01:42.778" endtime="20230508 12:01:42.778"/>
+</break>
+<status status="NOT RUN" starttime="20230508 12:01:42.777" endtime="20230508 12:01:42.779"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.779" endtime="20230508 12:01:42.780"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.781" level="INFO">${counter} = 9</msg>
+<status status="PASS" starttime="20230508 12:01:42.780" endtime="20230508 12:01:42.781"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.779" endtime="20230508 12:01:42.781"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.777" endtime="20230508 12:01:42.781"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.782" level="INFO">${raca_temp} = POODLE</msg>
+<status status="PASS" starttime="20230508 12:01:42.781" endtime="20230508 12:01:42.782"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.777" endtime="20230508 12:01:42.783"/>
+</iter>
+<iter>
+<if>
+<branch type="IF" condition="'${raca_temp}' == 'POODLE'">
+<kw name="Log To Console" library="BuiltIn">
+<arg>ACHAMOS O POODLE, ELE ESTÁ NA POSIÇÃO ${counter}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.784" endtime="20230508 12:01:42.784"/>
+</kw>
+<break>
+<status status="PASS" starttime="20230508 12:01:42.785" endtime="20230508 12:01:42.785"/>
+</break>
+<status status="PASS" starttime="20230508 12:01:42.783" endtime="20230508 12:01:42.785"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} não é poodle!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.786" endtime="20230508 12:01:42.786"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.786" endtime="20230508 12:01:42.786"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.785" endtime="20230508 12:01:42.787"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.783" endtime="20230508 12:01:42.787"/>
+</if>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.787" endtime="20230508 12:01:42.787"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.783" endtime="20230508 12:01:42.787"/>
+</iter>
+<status status="PASS" starttime="20230508 12:01:42.702" endtime="20230508 12:01:42.788"/>
+</while>
+<status status="PASS" starttime="20230508 12:01:42.694" endtime="20230508 12:01:42.788"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.789" endtime="20230508 12:01:42.790"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.788" endtime="20230508 12:01:42.790"/>
+</kw>
+<tag>aula-3-bonus-0</tag>
+<status status="PASS" starttime="20230508 12:01:42.691" endtime="20230508 12:01:42.790"/>
+</test>
+<test id="s1-t6" name="BONUS - LISTA RACAS MELHORES QUE POODLE" line="142">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.794" endtime="20230508 12:01:42.794"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.793" endtime="20230508 12:01:42.794"/>
+</kw>
+<kw name="liste as racas melhores que o poodle">
+<kw name="Set Local Variable" library="BuiltIn">
+<arg>${counter}</arg>
+<arg>0</arg>
+<doc>Makes a variable available everywhere within the local scope.</doc>
+<msg timestamp="20230508 12:01:42.797" level="INFO">${counter} = 0</msg>
+<status status="PASS" starttime="20230508 12:01:42.795" endtime="20230508 12:01:42.797"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.798" level="INFO">${raca_temp} = SRD</msg>
+<status status="PASS" starttime="20230508 12:01:42.798" endtime="20230508 12:01:42.798"/>
+</kw>
+<while condition="'${raca_temp}' != 'POODLE'">
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.799" endtime="20230508 12:01:42.800"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.801" level="INFO">${counter} = 1</msg>
+<status status="PASS" starttime="20230508 12:01:42.800" endtime="20230508 12:01:42.801"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.802" level="INFO">${raca_temp} = BEAGLE</msg>
+<status status="PASS" starttime="20230508 12:01:42.802" endtime="20230508 12:01:42.803"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.799" endtime="20230508 12:01:42.803"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.804" endtime="20230508 12:01:42.804"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.805" level="INFO">${counter} = 2</msg>
+<status status="PASS" starttime="20230508 12:01:42.805" endtime="20230508 12:01:42.805"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.806" level="INFO">${raca_temp} = DASCHUND</msg>
+<status status="PASS" starttime="20230508 12:01:42.806" endtime="20230508 12:01:42.807"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.803" endtime="20230508 12:01:42.807"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.807" endtime="20230508 12:01:42.808"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.809" level="INFO">${counter} = 3</msg>
+<status status="PASS" starttime="20230508 12:01:42.808" endtime="20230508 12:01:42.809"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.810" level="INFO">${raca_temp} = PITBULL</msg>
+<status status="PASS" starttime="20230508 12:01:42.809" endtime="20230508 12:01:42.810"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.807" endtime="20230508 12:01:42.810"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.811" endtime="20230508 12:01:42.811"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.812" level="INFO">${counter} = 4</msg>
+<status status="PASS" starttime="20230508 12:01:42.812" endtime="20230508 12:01:42.812"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.813" level="INFO">${raca_temp} = SHITZU</msg>
+<status status="PASS" starttime="20230508 12:01:42.813" endtime="20230508 12:01:42.813"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.810" endtime="20230508 12:01:42.814"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.814" endtime="20230508 12:01:42.815"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.816" level="INFO">${counter} = 5</msg>
+<status status="PASS" starttime="20230508 12:01:42.815" endtime="20230508 12:01:42.816"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.817" level="INFO">${raca_temp} = GOLDEN</msg>
+<status status="PASS" starttime="20230508 12:01:42.816" endtime="20230508 12:01:42.817"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.814" endtime="20230508 12:01:42.817"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.818" endtime="20230508 12:01:42.818"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.819" level="INFO">${counter} = 6</msg>
+<status status="PASS" starttime="20230508 12:01:42.819" endtime="20230508 12:01:42.820"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.821" level="INFO">${raca_temp} = PEQUINES</msg>
+<status status="PASS" starttime="20230508 12:01:42.820" endtime="20230508 12:01:42.821"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.818" endtime="20230508 12:01:42.822"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.822" endtime="20230508 12:01:42.823"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.824" level="INFO">${counter} = 7</msg>
+<status status="PASS" starttime="20230508 12:01:42.823" endtime="20230508 12:01:42.824"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.825" level="INFO">${raca_temp} = PASTOR</msg>
+<status status="PASS" starttime="20230508 12:01:42.824" endtime="20230508 12:01:42.825"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.822" endtime="20230508 12:01:42.825"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.826" endtime="20230508 12:01:42.826"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.827" level="INFO">${counter} = 8</msg>
+<status status="PASS" starttime="20230508 12:01:42.826" endtime="20230508 12:01:42.827"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.828" level="INFO">${raca_temp} = PUG</msg>
+<status status="PASS" starttime="20230508 12:01:42.827" endtime="20230508 12:01:42.828"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.825" endtime="20230508 12:01:42.828"/>
+</iter>
+<iter>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${raca_temp} é melhor que o poodle</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.829" endtime="20230508 12:01:42.830"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.830" level="INFO">${counter} = 9</msg>
+<status status="PASS" starttime="20230508 12:01:42.830" endtime="20230508 12:01:42.831"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${raca_temp}</var>
+<arg>${RACA_DOG_TURMA}[${counter}]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.832" level="INFO">${raca_temp} = POODLE</msg>
+<status status="PASS" starttime="20230508 12:01:42.831" endtime="20230508 12:01:42.832"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.829" endtime="20230508 12:01:42.832"/>
+</iter>
+<status status="PASS" starttime="20230508 12:01:42.799" endtime="20230508 12:01:42.832"/>
+</while>
+<status status="PASS" starttime="20230508 12:01:42.795" endtime="20230508 12:01:42.833"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.834" endtime="20230508 12:01:42.836"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.833" endtime="20230508 12:01:42.836"/>
+</kw>
+<tag>aula-3-bonus-1</tag>
+<status status="PASS" starttime="20230508 12:01:42.792" endtime="20230508 12:01:42.836"/>
+</test>
+<test id="s1-t7" name="BONUS - CONDICIONAL + TRY" line="146">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.840" endtime="20230508 12:01:42.841"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.840" endtime="20230508 12:01:42.841"/>
+</kw>
+<kw name="Printar no console se 25 e maior que 12" sourcename="Printar no console se ${num1} e maior que ${num2}">
+<try>
+<branch type="TRY">
+<if>
+<branch type="IF" condition="${num1} == ${num2}">
+<kw name="Fail" library="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.843" endtime="20230508 12:01:42.844"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.843" endtime="20230508 12:01:42.844"/>
+</branch>
+<branch type="ELSE IF" condition="${num1} &gt; ${num 2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${num1} é maior que ${num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.845" endtime="20230508 12:01:42.846"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.844" endtime="20230508 12:01:42.846"/>
+</branch>
+<branch type="ELSE IF" condition="${num1} &lt; ${num2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${num2} é maior que ${num1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.847" endtime="20230508 12:01:42.847"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.846" endtime="20230508 12:01:42.847"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.843" endtime="20230508 12:01:42.847"/>
+</if>
+<status status="PASS" starttime="20230508 12:01:42.843" endtime="20230508 12:01:42.847"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>(${num1} = ${num2}) Os numeros comparados são iguais.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.848" endtime="20230508 12:01:42.848"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.848" endtime="20230508 12:01:42.849"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Log To Console" library="BuiltIn">
+<arg>foram comparados os numeros ${num1} e ${num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.849" endtime="20230508 12:01:42.850"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.849" endtime="20230508 12:01:42.850"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.842" endtime="20230508 12:01:42.850"/>
+</try>
+<status status="PASS" starttime="20230508 12:01:42.842" endtime="20230508 12:01:42.851"/>
+</kw>
+<kw name="Printar no console se 25 e maior que 30" sourcename="Printar no console se ${num1} e maior que ${num2}">
+<try>
+<branch type="TRY">
+<if>
+<branch type="IF" condition="${num1} == ${num2}">
+<kw name="Fail" library="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.853" endtime="20230508 12:01:42.853"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.853" endtime="20230508 12:01:42.853"/>
+</branch>
+<branch type="ELSE IF" condition="${num1} &gt; ${num 2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${num1} é maior que ${num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.854" endtime="20230508 12:01:42.854"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.854" endtime="20230508 12:01:42.854"/>
+</branch>
+<branch type="ELSE IF" condition="${num1} &lt; ${num2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${num2} é maior que ${num1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.855" endtime="20230508 12:01:42.856"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.855" endtime="20230508 12:01:42.856"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.852" endtime="20230508 12:01:42.856"/>
+</if>
+<status status="PASS" starttime="20230508 12:01:42.852" endtime="20230508 12:01:42.856"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>(${num1} = ${num2}) Os numeros comparados são iguais.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.857" endtime="20230508 12:01:42.857"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.857" endtime="20230508 12:01:42.857"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Log To Console" library="BuiltIn">
+<arg>foram comparados os numeros ${num1} e ${num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.858" endtime="20230508 12:01:42.858"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.858" endtime="20230508 12:01:42.859"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.852" endtime="20230508 12:01:42.859"/>
+</try>
+<status status="PASS" starttime="20230508 12:01:42.851" endtime="20230508 12:01:42.859"/>
+</kw>
+<kw name="Printar no console se 25 e maior que 25" sourcename="Printar no console se ${num1} e maior que ${num2}">
+<try>
+<branch type="TRY">
+<if>
+<branch type="IF" condition="${num1} == ${num2}">
+<kw name="Fail" library="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<msg timestamp="20230508 12:01:42.863" level="FAIL">AssertionError</msg>
+<status status="FAIL" starttime="20230508 12:01:42.861" endtime="20230508 12:01:42.863"/>
+</kw>
+<status status="FAIL" starttime="20230508 12:01:42.861" endtime="20230508 12:01:42.864"/>
+</branch>
+<branch type="ELSE IF" condition="${num1} &gt; ${num 2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${num1} é maior que ${num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.864" endtime="20230508 12:01:42.865"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.864" endtime="20230508 12:01:42.865"/>
+</branch>
+<branch type="ELSE IF" condition="${num1} &lt; ${num2}">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${num2} é maior que ${num1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.865" endtime="20230508 12:01:42.866"/>
+</kw>
+<status status="NOT RUN" starttime="20230508 12:01:42.865" endtime="20230508 12:01:42.866"/>
+</branch>
+<status status="FAIL" starttime="20230508 12:01:42.861" endtime="20230508 12:01:42.866"/>
+</if>
+<status status="FAIL" starttime="20230508 12:01:42.860" endtime="20230508 12:01:42.867"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>(${num1} = ${num2}) Os numeros comparados são iguais.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.867" endtime="20230508 12:01:42.868"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.867" endtime="20230508 12:01:42.868"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Log To Console" library="BuiltIn">
+<arg>foram comparados os numeros ${num1} e ${num2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.869" endtime="20230508 12:01:42.870"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.869" endtime="20230508 12:01:42.870"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.860" endtime="20230508 12:01:42.870"/>
+</try>
+<status status="PASS" starttime="20230508 12:01:42.860" endtime="20230508 12:01:42.870"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.872" endtime="20230508 12:01:42.872"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.871" endtime="20230508 12:01:42.872"/>
+</kw>
+<tag>aula-3-bonus-2</tag>
+<status status="PASS" starttime="20230508 12:01:42.838" endtime="20230508 12:01:42.873"/>
+</test>
+<test id="s1-t8" name="BONUS - CONDICIONAL INLINE + ARGS E RETORNOS" line="152">
+<kw name="Pular linha no codigo" type="SETUP">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.876" endtime="20230508 12:01:42.876"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.875" endtime="20230508 12:01:42.877"/>
+</kw>
+<kw name="print a posicao do cachorro">
+<arg>PUG</arg>
+<kw name="ache o cachorro">
+<var>${posicao}</var>
+<arg>${cachorro}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${counter}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.879" level="INFO">${counter} = 0</msg>
+<status status="PASS" starttime="20230508 12:01:42.879" endtime="20230508 12:01:42.879"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{RACA_DOG_TURMA}</value>
+<iter>
+<var name="${element}">SRD</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.881" endtime="20230508 12:01:42.881"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.881" endtime="20230508 12:01:42.881"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.880" endtime="20230508 12:01:42.882"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.883" level="INFO">${counter} = 1</msg>
+<status status="PASS" starttime="20230508 12:01:42.882" endtime="20230508 12:01:42.883"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.880" endtime="20230508 12:01:42.883"/>
+</iter>
+<iter>
+<var name="${element}">BEAGLE</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.885" endtime="20230508 12:01:42.885"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.884" endtime="20230508 12:01:42.885"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.884" endtime="20230508 12:01:42.886"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.887" level="INFO">${counter} = 2</msg>
+<status status="PASS" starttime="20230508 12:01:42.886" endtime="20230508 12:01:42.887"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.884" endtime="20230508 12:01:42.887"/>
+</iter>
+<iter>
+<var name="${element}">DASCHUND</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.889" endtime="20230508 12:01:42.889"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.888" endtime="20230508 12:01:42.889"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.888" endtime="20230508 12:01:42.890"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.890" level="INFO">${counter} = 3</msg>
+<status status="PASS" starttime="20230508 12:01:42.890" endtime="20230508 12:01:42.891"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.888" endtime="20230508 12:01:42.891"/>
+</iter>
+<iter>
+<var name="${element}">PITBULL</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.892" endtime="20230508 12:01:42.892"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.892" endtime="20230508 12:01:42.893"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.892" endtime="20230508 12:01:42.893"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.894" level="INFO">${counter} = 4</msg>
+<status status="PASS" starttime="20230508 12:01:42.893" endtime="20230508 12:01:42.894"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.891" endtime="20230508 12:01:42.894"/>
+</iter>
+<iter>
+<var name="${element}">SHITZU</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.895" endtime="20230508 12:01:42.896"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.895" endtime="20230508 12:01:42.896"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.895" endtime="20230508 12:01:42.896"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.898" level="INFO">${counter} = 5</msg>
+<status status="PASS" starttime="20230508 12:01:42.896" endtime="20230508 12:01:42.898"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.894" endtime="20230508 12:01:42.898"/>
+</iter>
+<iter>
+<var name="${element}">GOLDEN</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.900" endtime="20230508 12:01:42.900"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.900" endtime="20230508 12:01:42.901"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.899" endtime="20230508 12:01:42.901"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.902" level="INFO">${counter} = 6</msg>
+<status status="PASS" starttime="20230508 12:01:42.901" endtime="20230508 12:01:42.902"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.899" endtime="20230508 12:01:42.903"/>
+</iter>
+<iter>
+<var name="${element}">PEQUINES</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.905" endtime="20230508 12:01:42.905"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.904" endtime="20230508 12:01:42.905"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.904" endtime="20230508 12:01:42.906"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.907" level="INFO">${counter} = 7</msg>
+<status status="PASS" starttime="20230508 12:01:42.906" endtime="20230508 12:01:42.907"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.904" endtime="20230508 12:01:42.907"/>
+</iter>
+<iter>
+<var name="${element}">PASTOR</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.909" endtime="20230508 12:01:42.910"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.909" endtime="20230508 12:01:42.910"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.909" endtime="20230508 12:01:42.916"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.918" level="INFO">${counter} = 8</msg>
+<status status="PASS" starttime="20230508 12:01:42.917" endtime="20230508 12:01:42.919"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.908" endtime="20230508 12:01:42.919"/>
+</iter>
+<iter>
+<var name="${element}">PUG</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="PASS" starttime="20230508 12:01:42.920" endtime="20230508 12:01:42.920"/>
+</return>
+<status status="PASS" starttime="20230508 12:01:42.920" endtime="20230508 12:01:42.921"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.920" endtime="20230508 12:01:42.921"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.921" endtime="20230508 12:01:42.922"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.919" endtime="20230508 12:01:42.922"/>
+</iter>
+<status status="PASS" starttime="20230508 12:01:42.880" endtime="20230508 12:01:42.922"/>
+</for>
+<msg timestamp="20230508 12:01:42.923" level="INFO">${posicao} = 8</msg>
+<status status="PASS" starttime="20230508 12:01:42.878" endtime="20230508 12:01:42.923"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>a posicao do ${cachorro} é ${posicao}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.923" endtime="20230508 12:01:42.924"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.877" endtime="20230508 12:01:42.925"/>
+</kw>
+<kw name="print a posicao do cachorro">
+<arg>SHITZU</arg>
+<kw name="ache o cachorro">
+<var>${posicao}</var>
+<arg>${cachorro}</arg>
+<kw name="Set Variable" library="BuiltIn">
+<var>${counter}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20230508 12:01:42.927" level="INFO">${counter} = 0</msg>
+<status status="PASS" starttime="20230508 12:01:42.926" endtime="20230508 12:01:42.927"/>
+</kw>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{RACA_DOG_TURMA}</value>
+<iter>
+<var name="${element}">SRD</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.929" endtime="20230508 12:01:42.929"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.928" endtime="20230508 12:01:42.929"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.928" endtime="20230508 12:01:42.929"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.930" level="INFO">${counter} = 1</msg>
+<status status="PASS" starttime="20230508 12:01:42.930" endtime="20230508 12:01:42.931"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.928" endtime="20230508 12:01:42.931"/>
+</iter>
+<iter>
+<var name="${element}">BEAGLE</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.935" endtime="20230508 12:01:42.935"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.935" endtime="20230508 12:01:42.936"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.932" endtime="20230508 12:01:42.936"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.937" level="INFO">${counter} = 2</msg>
+<status status="PASS" starttime="20230508 12:01:42.936" endtime="20230508 12:01:42.937"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.931" endtime="20230508 12:01:42.937"/>
+</iter>
+<iter>
+<var name="${element}">DASCHUND</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.938" endtime="20230508 12:01:42.939"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.938" endtime="20230508 12:01:42.939"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.938" endtime="20230508 12:01:42.939"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.940" level="INFO">${counter} = 3</msg>
+<status status="PASS" starttime="20230508 12:01:42.939" endtime="20230508 12:01:42.940"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.937" endtime="20230508 12:01:42.940"/>
+</iter>
+<iter>
+<var name="${element}">PITBULL</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="NOT RUN" starttime="20230508 12:01:42.941" endtime="20230508 12:01:42.942"/>
+</return>
+<status status="NOT RUN" starttime="20230508 12:01:42.941" endtime="20230508 12:01:42.942"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.941" endtime="20230508 12:01:42.942"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230508 12:01:42.943" level="INFO">${counter} = 4</msg>
+<status status="PASS" starttime="20230508 12:01:42.942" endtime="20230508 12:01:42.943"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.941" endtime="20230508 12:01:42.943"/>
+</iter>
+<iter>
+<var name="${element}">SHITZU</var>
+<if>
+<branch type="IF" condition="'${element}' == '${cachorro}'">
+<return>
+<value>${counter}</value>
+<status status="PASS" starttime="20230508 12:01:42.945" endtime="20230508 12:01:42.945"/>
+</return>
+<status status="PASS" starttime="20230508 12:01:42.944" endtime="20230508 12:01:42.945"/>
+</branch>
+<status status="PASS" starttime="20230508 12:01:42.944" endtime="20230508 12:01:42.945"/>
+</if>
+<kw name="Evaluate" library="BuiltIn">
+<var>${counter}</var>
+<arg>${counter} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20230508 12:01:42.945" endtime="20230508 12:01:42.946"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.944" endtime="20230508 12:01:42.946"/>
+</iter>
+<status status="PASS" starttime="20230508 12:01:42.927" endtime="20230508 12:01:42.946"/>
+</for>
+<msg timestamp="20230508 12:01:42.947" level="INFO">${posicao} = 4</msg>
+<status status="PASS" starttime="20230508 12:01:42.926" endtime="20230508 12:01:42.947"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>a posicao do ${cachorro} é ${posicao}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.948" endtime="20230508 12:01:42.949"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.925" endtime="20230508 12:01:42.950"/>
+</kw>
+<kw name="Pular linha no codigo" type="TEARDOWN">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${\n}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230508 12:01:42.951" endtime="20230508 12:01:42.952"/>
+</kw>
+<status status="PASS" starttime="20230508 12:01:42.950" endtime="20230508 12:01:42.952"/>
+</kw>
+<tag>aula-3-bonus-3</tag>
+<status status="PASS" starttime="20230508 12:01:42.874" endtime="20230508 12:01:42.952"/>
+</test>
+<doc>aula 3</doc>
+<status status="PASS" starttime="20230508 12:01:42.557" endtime="20230508 12:01:42.954"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">aula-3-bonus-0</stat>
+<stat pass="1" fail="0" skip="0">aula-3-bonus-1</stat>
+<stat pass="1" fail="0" skip="0">aula-3-bonus-2</stat>
+<stat pass="1" fail="0" skip="0">aula-3-bonus-3</stat>
+<stat pass="1" fail="0" skip="0">aula-3-dict-1</stat>
+<stat pass="1" fail="0" skip="0">aula-3-list-1</stat>
+<stat pass="1" fail="0" skip="0">aula-3-rep-1</stat>
+<stat pass="1" fail="0" skip="0">aula-3-rep-2</stat>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Aula3">Aula3</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

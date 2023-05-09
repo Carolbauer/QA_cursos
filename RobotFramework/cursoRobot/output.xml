@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20230508 16:10:22.951" rpa="false" schemaversion="3">
+<suite id="s1" name="Primeiro-Teste" source="/Users/carol/Documents/GitHub/Cursos_QA/QA_cursos/cursoRobot/primeiro-teste.robot">
+<test id="s1-t1" name="Abrir navegador e acessar o site do organo" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=http://localhost:3000 browser=Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230508 16:10:23.020" level="INFO">Opening browser 'firefox' to base url 'http://localhost:3000 browser=Chrome'.</msg>
+<msg timestamp="20230508 16:10:23.021" level="INFO">Firefox driver log is always forced to to: /Users/carol/Documents/GitHub/Cursos_QA/QA_cursos/cursoRobot/geckodriver-3.log</msg>
+<msg timestamp="20230508 16:10:23.024" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20230508 16:10:23.025" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20230508 16:10:23.019" endtime="20230508 16:10:23.026"/>
+</kw>
+<status status="FAIL" starttime="20230508 16:10:23.019" endtime="20230508 16:10:23.027">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<status status="FAIL" starttime="20230508 16:10:22.953" endtime="20230508 16:10:23.027"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Primeiro-Teste">Primeiro-Teste</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
