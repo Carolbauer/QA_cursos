@@ -23,6 +23,9 @@ document.getElementById('user-name').innerHTML = userName
 var n1 = 5
 var n2 = 5
 
+
+
+
 var total = n1 + n2
 console.log(total)
 
@@ -35,5 +38,16 @@ var resultado = v1 != v2
 
 console.log(resultado)
 
+
+//Funções//
+
+//function soma(n1,n2){
+    //console.log(n1+n2)
+
+//}
+
+function boasVindas(){
+    alert('Sejam bem vindos')
+}
 
 
