@@ -50,4 +50,9 @@ function boasVindas(){
     alert('Sejam bem vindos')
 }
 
+// Controles de repetição (Loops)//
+var personagens = ['Luke', 'Leia', 'Han Solo', 'Chewbacca']
 
+personagens.forEach(function(p){
+    console.log(p)
+})
